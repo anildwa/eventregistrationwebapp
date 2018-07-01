@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Registrations</title>
+  <link rel="stylesheet" href="main.css" />
+  <script src="jquery.min.js"></script>
+  <script>
+    
+    
+
+    function toggleChalkTalk(){
+     if($("#sessionType").val() == "chalktalk"){
+       $("#divChalktalk").show();
+     }
+     else
+     {
+      $("#divChalktalk").hide();
+     }
+
+    }
+  </script>
+</head>
+<body>
+  <h1>Register for the Event</h1>
+
+  
+
+  <div class="maincontent">
+
+    <div id="leftDiv">
+        <h3>Running on :<%= hostName  %></h3>
+        <h3>Current Registrations</h3>
+        
+           <table>
+            <th>Session Type</th> 
+            <th>Attendee Name</th>
+             <th>Email</th>
+             <th>Company</th>
+             <th>Interests</th>
+             <tbody>
+             <% for(var i=0; i<events.length; i++){%>
+               <tr>
+                <td><span> <%= events[i].sessionType %> </span></td>
+                 <td><span> <%= events[i].attendeeName %> </span></td>
+                 <td><span><%= events[i].email %></span></td>
+                 <td><span><%= events[i].company %></span></td>
+                 <td><span><%= events[i].interests %></span></td>
+               </tr>
+               
+             <% } %>
+           </tbody>
+           </table>
+    </div>
+    <div id="rightDiv">
+        <form action="/events" method="POST">
+          <h3>Please provide your details</h3>
+          <ul class="formcontent">
+            <li>
+                <label>Session Type</label>
+                <select name="sessionType" id="sessionType" onchange="toggleChalkTalk();" >
+                  <option value="breakout">Breakout</option>
+                  <option value="chalktalk">Chalk Talk</option>
+                </select>
+            </li>
+            <li>
+                <label>Attendee Name</label>
+                <input type="text" placeholder="Attendee Name" name="attendeeName">
+            </li>
+            <li>
+                <label>Email</label>
+                <input type="text" placeholder="someone@example.com" name="email">
+              </li>
+              <li>
+                  <label>Company</label>
+                  <input type="text" placeholder="Company" name="company">
+                </li>
+                <li>
+                    <div id="divChalktalk" style="display:none">
+                        <label>Interests</label>
+                        <input type="text" placeholder="Interests" name="interests">
+                        
+                    </div>
+                </li>
+                <li>
+                  <br/>
+                    <button type="submit">Register</button>
+                </li>
+          </ul>          
+                    
+          
+        </form>
+    </div>
+        
+          
+  </div>
+
+  
+</body>
+</html>

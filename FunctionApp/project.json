@@ -1,0 +1,11 @@
+{
+    "frameworks":{
+        
+        "net46":{
+
+            "dependencies":{
+                "SendGrid":"9.5.0"
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+html{
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width:100%;
+}
+.maincontent{
+
+    margin-left:20%;
+    display: inline-block;
+    width:100%;
+}
+ul{
+ list-style-type:  none;
+}
+h1{
+    text-align: center;
+    color: blueviolet;
+    margin-bottom:5%;
+    width:100%;
+    
+}
+h3{
+    color: deepskyblue;
+}
+label{
+    color:deepskyblue;
+    display:block;
+}
+input{
+    width:70%;
+}
+
+#leftDiv, #rightDiv{
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+#rightDiv{
+    margin-left:5%;
+    width:30%;
+    vertical-align: top;
+    
+}
+form{
+    width:100%;
+}
+.formcontent{
+    width:100%;
+    margin-left:10%;
+    padding:0px;
+}

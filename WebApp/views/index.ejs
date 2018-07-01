@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="main.css" />
+<div class="maincontent">
+
+<% if (!user) { %>
+  <h2>Welcome! Please log in.</h2>
+  <a href="/login/?p=B2C_1_susi">Sign In</a>
+  <a href="/login/?p=B2C_1_susi">Sign Up</a>
+  <a href="/login/?p=B2C_1_updateprofile">Update Profile</a>
+  <a href="/login/?p=B2C_1_resetpassword">Reset Password</a>
+<% } else { %>
+  <h2>Hello, <%= user.emails[0] %>.</h2>
+  <a href="/account">Account Info</a></br>
+  <a href="/events">Events</a> <p></p>
+  <a href="/logout">Log Out</a>
+<% } %>
+</div>
