@@ -360,10 +360,15 @@ app.get('/logout', function(req, res){
   });
 });
 
-app.listen(3000);
+
+app.listen(process.env.port || process.env.PORT || 8081, () => {
+  console.log('listening on 8081');
+});
+
+//app.listen(3000);
 
 
-function normalizePort(val) {
+/* function normalizePort(val) {
 	const port = parseInt(val, 10);
   
       if (isNaN(port)) {
@@ -377,11 +382,11 @@ function normalizePort(val) {
       }
       
 	  return false;
-  }
+  } */
 
 
-const httpsPort = normalizePort(process.env.PORT || '3443');
-app.set('httpsPort', httpsPort);
+// const httpsPort = normalizePort(process.env.PORT || '3443');
+// app.set('httpsPort', httpsPort);
 
-httpsServer.listen(httpsPort);
+// httpsServer.listen(httpsPort);
 

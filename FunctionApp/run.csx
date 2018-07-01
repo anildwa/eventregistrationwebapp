@@ -85,7 +85,7 @@ public static void Run(IReadOnlyList<Document> input, TraceWriter log)
         log.Verbose("email is " + docdata["$v"]["email"]["$v"]);
         log.Verbose("attendeeName is " + docdata["$v"]["attendeeName"]["$v"]);
        
-        var client = new SendGridClient("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");
+        var client = new SendGridClient("");
 
         var from = new EmailAddress("anildwa@msftdemo.com", "anildwa");
 
