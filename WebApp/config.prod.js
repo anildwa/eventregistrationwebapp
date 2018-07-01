@@ -23,7 +23,7 @@ exports.creds = {
   
   // Required if `responseType` is 'code', 'id_token code' or 'code id_token'. 
   // If app key contains '\', replace it with '\\'.
-  clientSecret: 'R>=d6*H9[k;69/6-3m3!j)J!', 
+  clientSecret: '', 
 
   // Required, must be true for B2C
   isB2C: true,
@@ -84,7 +84,7 @@ exports.useMongoDBSessionStore = false;
 // If you want to use mongoDB, provide the uri here for the database.
 exports.databaseUri = 'mongodb://localhost/OIDCStrategy';
 
-exports.eventsDatabase = 'mongodb://anildwamongoapi:N9cbRBhHUIdZhpna9K9P8fFZZNrpk0LG1Ea8wgiCBcrzRsd50EfW2kbGmuJXhjyLEbQX6afpH7uwpg1777IQEg==@anildwamongoapi.documents.azure.com:10255/db1?ssl=true&replicaSet=globaldb';
+exports.eventsDatabase = '';
 
 // How long you want to keep session in mongoDB.
 exports.mongoDBSessionMaxAge = 24 * 60 * 60;  // 1 day (unit is second)
