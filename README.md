@@ -24,7 +24,7 @@ This demo sample has the following functionality
 
 Updated Azure Active Directory B2C tenant ID and application ID in config.*.js
 
-Update the eventdatabase value with tCosmos DB Mongo DB connection string in config.*.js 
+Update the eventdatabase value with the Cosmos DB Mongo DB connection string in config.*.js 
 
 Update Sendemail API key in run.csx and upload to Function App
 
