@@ -1,4 +1,4 @@
-#Event Registration Web App
+# Event Registration Web App
 
 This is a demo sample that shows how to build  Event Registration Web App using Node, express, Cosmos DB, Functions and SendGrid.
 
