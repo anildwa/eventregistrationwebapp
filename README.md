@@ -10,7 +10,7 @@ This demo sample has the following functionality
 - Integrates with Azure Active Directory B2C for authentication using Social IDPs
 - Stores application data in Cosmos DB using Mongo DB API
 - Has backend Azure Function which listens for Cosmos DB change feed and send emails to registered email submitted      using the UI
-- SendGrid is used the SMTP relay to send email to the email id
+- SendGrid is used as SMTP relay to send email to the email id
 
 ## Prerequisites
 - Azure Active Directory B2C created and configured with social logins. 
