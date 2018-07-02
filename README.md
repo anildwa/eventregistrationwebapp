@@ -44,7 +44,8 @@ You will have a server successfully running on `http://localhost:3000` or `https
 
 ### Acknowledgements
 
-We would like to acknowledge the folks who own/contribute to the following projects for their support of Azure Active Directory and their libraries that were used to build this sample. In places where we forked these libraries to add additional functionality, we ensured that the chain of forking remains intact so you can navigate back to the original package. Working with such great partners in the open source community clearly illustrates what open collaboration can accomplish. Thank you!
+This sample has been forked from [AzureADQuickStarts/B2C-WebApp-OpenIDConnect-NodeJS ](https://github.com/AzureADQuickStarts/B2C-WebApp-OpenIDConnect-NodeJS).
+
 
 
 ## About The Code
